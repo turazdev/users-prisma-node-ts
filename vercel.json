@@ -2,6 +2,12 @@
     "name": "users-prisma-node-ts",
     "version": 2,
     "public": true,
+    "rewrites":[
+        {
+            "source": "/(.*)",
+            "destination": "/api"
+        }
+    ],
     "builds": [
         {
         "src": "src/server.ts",

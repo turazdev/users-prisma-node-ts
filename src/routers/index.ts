@@ -7,5 +7,8 @@ const routes=Router();
 
 routes.use("/users",userRoutes);
 routes.use("/movies",movieRoutes);
+routes.get("/",(req,res)=>{
+    res.send("Ola World!")
+});
 
 export { routes };
